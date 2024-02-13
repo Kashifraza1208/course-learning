@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, 
+				initial-scale=1"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+
+    <title>Course Learning Page</title>
+  </head>
+  <body>
+    <section id="navbar">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"> Course Learning App </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav m-auto" id="heading">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#courses">Courses</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#footer">Contact Us</a>
+              </li>
+            </ul>
+            <div class="dropdown">
+              <button
+                class="btn btn-secondary dropdown-toggle"
+                type="button"
+                id="languageDropdown"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Language
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                <li>
+                  <a class="dropdown-item" href="#" id="english">English</a>
+                </li>
+                <li><a class="dropdown-item" href="#" id="hindi">Hindi</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </section>
+
+    <!-- banner -->
+    <section id="banner">
+      <div class="container-fluid" id="banner-container">
+        <div class="row" id="banner-row">
+          <div class="col-md-6" id="banner-col">
+            <h3 id="banner-heading">
+              Choose the Free Course That Aligns Best With Your Educational
+              Goals
+            </h3>
+
+            <p id="banner-paragraph">
+              The free courses we offer cover a wide array of topics, from
+              technical skills to personal development, providing accessible
+              education for career advancement or individual learning goals with
+              no cost.
+            </p>
+          </div>
+          <div class="col-md-6" id="banner-col2">
+            <img
+              class="img-responsive rounded mx-auto d-block"
+              src="images/gfg.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Course Content -->
+    <section id="courses" class="container mt-5 mb-5">
+      <h1 class="text-center mb-3">Courses</h1>
+      <div
+        style="gap: 50px; display: flex; align-items: center; flex-wrap: wrap"
+      >
+        <!-- Video Player for Course Content -->
+        <div class="card" style="width: 300px">
+          <div class="liveradio mb-2">
+            <video controls width="300" height="150">
+              <source src="./assets/demo.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <audio controls width="20">
+            <source src="./assets/1.mp3" type="audio/mp3" />
+            Your browser does not support the audio tag.
+          </audio>
+          <div class="card-body" style="font-size: 14px">
+            <div class="d-flex flex-column gap-2 width-100">
+              <h3 class="card-title mb-0 mt-0">App development</h3>
+              <div
+                style="font-size: 14px"
+                class="d-flex align-items-center justify-content-start me-5 ms-0"
+              >
+                <p
+                  id="course-desc"
+                  class="d-flex align-items-left justify-content-start mt-0 mb-0 ml-0 mx-0"
+                >
+                  This course introduces students to programming technologies,
+                  design and development related to mobile applications
+                </p>
+              </div>
+              <div class="col-md-4" style="width: 100%; margin-bottom: 10px">
+                <div class="progress">
+                  <div
+                    class="progress-bar p-1"
+                    role="progressbar"
+                    style="width: 50%"
+                    aria-valuenow="45"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  >
+                    50% Complete
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h5 class="card-title mb-2" style="font-weight: 800">
+              This course includes:
+            </h5>
+
+            <ul>
+              <li>45 hours on-demand video</li>
+              <li>Access on mobile and TV</li>
+              <li>Full lifetime access</li>
+              <li>Certificate of completion</li>
+            </ul>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <span>5</span>
+            <span>(15,532 ratings)</span>
+            <div class="d-flex flex-column">
+              <span>126,646 students</span>
+              <span>Created By : Kashif Raza</span>
+            </div>
+          </div>
+        </div>
+        <div class="card" style="width: 300px">
+          <div class="liveradio mb-2">
+            <video controls width="300" height="150">
+              <source src="./assets/demo.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <audio controls width="20">
+            <source src="./assets/1.mp3" type="audio/mp3" />
+            Your browser does not support the audio tag.
+          </audio>
+          <div class="card-body" style="font-size: 14px">
+            <div class="d-flex flex-column gap-2 width-100">
+              <h3 class="card-title mb-0 mt-0">App development</h3>
+              <div
+                style="font-size: 14px"
+                class="d-flex align-items-center justify-content-start me-5 ms-0"
+              >
+                <p
+                  id="course-desc1"
+                  class="d-flex align-items-left justify-content-start mt-0 mb-0 ml-0 mx-0"
+                >
+                  This course introduces students to programming technologies,
+                  design and development related to mobile applications
+                </p>
+              </div>
+              <div class="col-md-4" style="width: 100%; margin-bottom: 10px">
+                <div class="progress">
+                  <div
+                    class="progress-bar p-1"
+                    role="progressbar"
+                    style="width: 50%"
+                    aria-valuenow="45"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  >
+                    50% Complete
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h5 class="card-title mb-2" style="font-weight: 800">
+              This course includes:
+            </h5>
+
+            <ul>
+              <li>45 hours on-demand video</li>
+              <li>Access on mobile and TV</li>
+              <li>Full lifetime access</li>
+              <li>Certificate of completion</li>
+            </ul>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <span>5</span>
+            <span>(15,532 ratings)</span>
+            <div class="d-flex flex-column">
+              <span>126,646 students</span>
+              <span>Created By : Kashif Raza</span>
+            </div>
+          </div>
+        </div>
+        <div class="card" style="width: 300px">
+          <div class="liveradio mb-2">
+            <video controls width="300" height="150">
+              <source src="./assets/demo.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <audio controls width="20">
+            <source src="./assets/1.mp3" type="audio/mp3" />
+            Your browser does not support the audio tag.
+          </audio>
+          <div class="card-body" style="font-size: 14px">
+            <div class="d-flex flex-column gap-2 width-100">
+              <h3 class="card-title mb-0 mt-0">App development</h3>
+              <div
+                style="font-size: 14px"
+                class="d-flex align-items-center justify-content-start me-5 ms-0"
+              >
+                <p
+                  id="course-desc2"
+                  class="d-flex align-items-left justify-content-start mt-0 mb-0 ml-0 mx-0"
+                >
+                  This course introduces students to programming technologies,
+                  design and development related to mobile applications
+                </p>
+              </div>
+              <div class="col-md-4" style="width: 100%; margin-bottom: 10px">
+                <div class="progress">
+                  <div
+                    class="progress-bar p-1"
+                    role="progressbar"
+                    style="width: 50%"
+                    aria-valuenow="45"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  >
+                    50% Complete
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h5 class="card-title mb-2" style="font-weight: 800">
+              This course includes:
+            </h5>
+
+            <ul>
+              <li>45 hours on-demand video</li>
+              <li>Access on mobile and TV</li>
+              <li>Full lifetime access</li>
+              <li>Certificate of completion</li>
+            </ul>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <span>5</span>
+            <span>(15,532 ratings)</span>
+            <div class="d-flex flex-column">
+              <span>126,646 students</span>
+              <span>Created By : Kashif Raza</span>
+            </div>
+          </div>
+        </div>
+        <div class="card" style="width: 300px">
+          <div class="liveradio mb-2">
+            <video controls width="300" height="150">
+              <source src="./assets/demo.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <audio controls width="20">
+            <source src="./assets/1.mp3" type="audio/mp3" />
+            Your browser does not support the audio tag.
+          </audio>
+          <div class="card-body" style="font-size: 14px">
+            <div class="d-flex flex-column gap-2 width-100">
+              <h3 class="card-title mb-0 mt-0">App development</h3>
+              <div
+                style="font-size: 14px"
+                class="d-flex align-items-center justify-content-start me-5 ms-0"
+              >
+                <p
+                  id="course-desc3"
+                  class="d-flex align-items-left justify-content-start mt-0 mb-0 ml-0 mx-0"
+                >
+                  This course introduces students to programming technologies,
+                  design and development related to mobile applications
+                </p>
+              </div>
+              <div class="col-md-4" style="width: 100%; margin-bottom: 10px">
+                <div class="progress">
+                  <div
+                    class="progress-bar p-1"
+                    role="progressbar"
+                    style="width: 50%"
+                    aria-valuenow="45"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  >
+                    50% Complete
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h5 class="card-title mb-2" style="font-weight: 800">
+              This course includes:
+            </h5>
+
+            <ul>
+              <li>45 hours on-demand video</li>
+              <li>Access on mobile and TV</li>
+              <li>Full lifetime access</li>
+              <li>Certificate of completion</li>
+            </ul>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <span>5</span>
+            <span>(15,532 ratings)</span>
+            <div class="d-flex flex-column">
+              <span>126,646 students</span>
+              <span>Created By : Kashif Raza</span>
+            </div>
+          </div>
+        </div>
+        <div class="card" style="width: 300px">
+          <div class="liveradio mb-2">
+            <video controls width="300" height="150">
+              <source src="./assets/demo.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <audio controls width="20">
+            <source src="./assets/1.mp3" type="audio/mp3" />
+            Your browser does not support the audio tag.
+          </audio>
+          <div class="card-body" style="font-size: 14px">
+            <div class="d-flex flex-column gap-2 width-100">
+              <h3 class="card-title mb-0 mt-0">App development</h3>
+              <div
+                style="font-size: 14px"
+                class="d-flex align-items-center justify-content-start me-5 ms-0"
+              >
+                <p
+                  id="course-desc4"
+                  class="d-flex align-items-left justify-content-start mt-0 mb-0 ml-0 mx-0"
+                >
+                  This course introduces students to programming technologies,
+                  design and development related to mobile applications
+                </p>
+              </div>
+              <div class="col-md-4" style="width: 100%; margin-bottom: 10px">
+                <div class="progress">
+                  <div
+                    class="progress-bar p-1"
+                    role="progressbar"
+                    style="width: 50%"
+                    aria-valuenow="45"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  >
+                    50% Complete
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h5 class="card-title mb-2" style="font-weight: 800">
+              This course includes:
+            </h5>
+
+            <ul>
+              <li>45 hours on-demand video</li>
+              <li>Access on mobile and TV</li>
+              <li>Full lifetime access</li>
+              <li>Certificate of completion</li>
+            </ul>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <span>5</span>
+            <span>(15,532 ratings)</span>
+            <div class="d-flex flex-column">
+              <span>126,646 students</span>
+              <span>Created By : Kashif Raza</span>
+            </div>
+          </div>
+        </div>
+        <div class="card" style="width: 300px">
+          <div class="liveradio mb-2">
+            <video controls width="300" height="150">
+              <source src="./assets/demo.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <audio controls width="20">
+            <source src="./assets/1.mp3" type="audio/mp3" />
+            Your browser does not support the audio tag.
+          </audio>
+          <div class="card-body" style="font-size: 14px">
+            <div class="d-flex flex-column gap-2 width-100">
+              <h3 class="card-title mb-0 mt-0">App development</h3>
+              <div
+                style="font-size: 14px"
+                class="d-flex align-items-center justify-content-start me-5 ms-0"
+              >
+                <p
+                  id="course-desc5"
+                  class="d-flex align-items-left justify-content-start mt-0 mb-0 ml-0 mx-0"
+                >
+                  This course introduces students to programming technologies,
+                  design and development related to mobile applications
+                </p>
+              </div>
+              <div class="col-md-4" style="width: 100%; margin-bottom: 10px">
+                <div class="progress">
+                  <div
+                    class="progress-bar p-1"
+                    role="progressbar"
+                    style="width: 50%"
+                    aria-valuenow="45"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  >
+                    50% Complete
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h5 class="card-title mb-2" style="font-weight: 800">
+              This course includes:
+            </h5>
+
+            <ul>
+              <li>45 hours on-demand video</li>
+              <li>Access on mobile and TV</li>
+              <li>Full lifetime access</li>
+              <li>Certificate of completion</li>
+            </ul>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <span>5</span>
+            <span>(15,532 ratings)</span>
+            <div class="d-flex flex-column">
+              <span>126,646 students</span>
+              <span>Created By : Kashif Raza</span>
+            </div>
+          </div>
+        </div>
+        <div class="card" style="width: 300px">
+          <div class="liveradio mb-2">
+            <video controls width="300" height="150">
+              <source src="./assets/demo.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <audio controls width="20">
+            <source src="./assets/1.mp3" type="audio/mp3" />
+            Your browser does not support the audio tag.
+          </audio>
+          <div class="card-body" style="font-size: 14px">
+            <div class="d-flex flex-column gap-2 width-100">
+              <h3 class="card-title mb-0 mt-0">App development</h3>
+              <div
+                style="font-size: 14px"
+                class="d-flex align-items-center justify-content-start me-5 ms-0"
+              >
+                <p
+                  id="course-desc6"
+                  class="d-flex align-items-left justify-content-start mt-0 mb-0 ml-0 mx-0"
+                >
+                  This course introduces students to programming technologies,
+                  design and development related to mobile applications
+                </p>
+              </div>
+              <div class="col-md-4" style="width: 100%; margin-bottom: 10px">
+                <div class="progress">
+                  <div
+                    class="progress-bar p-1"
+                    role="progressbar"
+                    style="width: 50%"
+                    aria-valuenow="45"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  >
+                    50% Complete
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h5 class="card-title mb-2" style="font-weight: 800">
+              This course includes:
+            </h5>
+
+            <ul>
+              <li>45 hours on-demand video</li>
+              <li>Access on mobile and TV</li>
+              <li>Full lifetime access</li>
+              <li>Certificate of completion</li>
+            </ul>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <span>5</span>
+            <span>(15,532 ratings)</span>
+            <div class="d-flex flex-column">
+              <span>126,646 students</span>
+              <span>Created By : Kashif Raza</span>
+            </div>
+          </div>
+        </div>
+        <div class="card" style="width: 300px">
+          <div class="liveradio mb-2">
+            <video controls width="300" height="150">
+              <source src="./assets/demo.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <audio controls width="20">
+            <source src="./assets/1.mp3" type="audio/mp3" />
+            Your browser does not support the audio tag.
+          </audio>
+          <div class="card-body" style="font-size: 14px">
+            <div class="d-flex flex-column gap-2 width-100">
+              <h3 class="card-title mb-0 mt-0">App development</h3>
+              <div
+                style="font-size: 14px"
+                class="d-flex align-items-center justify-content-start me-5 ms-0"
+              >
+                <p
+                  id="course-desc7"
+                  class="d-flex align-items-left justify-content-start mt-0 mb-0 ml-0 mx-0"
+                >
+                  This course introduces students to programming technologies,
+                  design and development related to mobile applications
+                </p>
+              </div>
+              <div class="col-md-4" style="width: 100%; margin-bottom: 10px">
+                <div class="progress">
+                  <div
+                    class="progress-bar p-1"
+                    role="progressbar"
+                    style="width: 50%"
+                    aria-valuenow="45"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  >
+                    50% Complete
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h5 class="card-title mb-2" style="font-weight: 800">
+              This course includes:
+            </h5>
+
+            <ul>
+              <li>45 hours on-demand video</li>
+              <li>Access on mobile and TV</li>
+              <li>Full lifetime access</li>
+              <li>Certificate of completion</li>
+            </ul>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <span>5</span>
+            <span>(15,532 ratings)</span>
+            <div class="d-flex flex-column">
+              <span>126,646 students</span>
+              <span>Created By : Kashif Raza</span>
+            </div>
+          </div>
+        </div>
+        <div class="card" style="width: 300px">
+          <div class="liveradio mb-2">
+            <video controls width="300" height="150">
+              <source src="./assets/demo.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <audio controls width="20">
+            <source src="./assets/1.mp3" type="audio/mp3" />
+            Your browser does not support the audio tag.
+          </audio>
+          <div class="card-body" style="font-size: 14px">
+            <div class="d-flex flex-column gap-2 width-100">
+              <h3 class="card-title mb-0 mt-0">App development</h3>
+              <div
+                style="font-size: 14px"
+                class="d-flex align-items-center justify-content-start me-5 ms-0"
+              >
+                <p
+                  id="course-desc8"
+                  class="d-flex align-items-left justify-content-start mt-0 mb-0 ml-0 mx-0"
+                >
+                  This course introduces students to programming technologies,
+                  design and development related to mobile applications
+                </p>
+              </div>
+              <div class="col-md-4" style="width: 100%; margin-bottom: 10px">
+                <div class="progress">
+                  <div
+                    class="progress-bar p-1"
+                    role="progressbar"
+                    style="width: 50%"
+                    aria-valuenow="45"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  >
+                    50% Complete
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h5 class="card-title mb-2" style="font-weight: 800">
+              This course includes:
+            </h5>
+
+            <ul>
+              <li>45 hours on-demand video</li>
+              <li>Access on mobile and TV</li>
+              <li>Full lifetime access</li>
+              <li>Certificate of completion</li>
+            </ul>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <span>5</span>
+            <span>(15,532 ratings)</span>
+            <div class="d-flex flex-column">
+              <span>126,646 students</span>
+              <span>Created By : Kashif Raza</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr />
+
+    <!-- about Us -->
+    <section id="about">
+      <h1 class="text-center" id="about-heading">About Us</h1>
+      <div class="container-fluid" id="about-container">
+        <div class="row" id="banner-row">
+          <div class="col-md-6" id="about-col">
+            <h3>Why Us</h3>
+            <ul>
+              <li>
+                Probuz is all about Delivering High Quality web design and
+                development services, Cost effective and reliable solutions.
+              </li>
+              <li>SCHOOL/COLLEGE MANAGEMENT SOFTWARE (CAMPUS PRO)</li>
+              <li>
+                Let us take care of your development needs. Customer
+                Productivity is our Priority.
+              </li>
+              <li>Our expertise in App development,web development</li>
+            </ul>
+          </div>
+          <div class="col-md-6" id="banner-col2">
+            <img
+              class="img-responsive rounded mx-auto d-block"
+              src="./assets/bg.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="footer">
+      <section id="banner">
+        <div class="container-fluid" id="banner-container">
+          <div class="row" id="banner-row">
+            <div class="col-md-4" id="footer-col1">
+              <h3>My Website</h3>
+
+              <p id="about-paragraph">
+                At XYZ we believe that customers should always get easy-to-use,
+                best in the kind and fast services.xyz has achieved standards
+                which helps customer to achieve satisfaction and realize value
+                for their hard earned money.
+              </p>
+            </div>
+            <div class="col-md-4" id="footer-col2">
+              <h3 id="footer-heading">Contact Us</h3>
+
+              <p id="phone">Call Us- 1800-121-6532</p>
+
+              <p id="email-contact">Email Us- support@xyz.com</p>
+            </div>
+
+            <div class="col-md-4" id="footer-col2">
+              <h3>Subscribe To Newsletter</h3>
+              <form>
+                <div class="mb-3">
+                  <input
+                    type="email"
+                    placeholder="Enter Your Email"
+                    class="form-control"
+                    id="exampleInputEmail1"
+                    aria-describedby="emailHelp"
+                  />
+                  <div id="emailHelp" class="form-text">
+                    We'll never share your email with anyone else.
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      // Function to change text content to Hindi
+      function changeToHindi() {
+        // Navbar
+        document.getElementById("languageDropdown").innerHTML = "भाषा";
+        document.getElementById("english").innerHTML = "English";
+        document.getElementById("hindi").innerHTML = "हिंदी";
+
+        // Banner
+        document.getElementById("course-desc").innerHTML =
+          "यह पाठ्यक्रम छात्रों को मोबाइल एप्लिकेशन से संबंधित प्रोग्रामिंग प्रौद्योगिकियों, डिजाइन और विकास से परिचित कराता है";
+        document.getElementById("course-desc1").innerHTML =
+          "यह पाठ्यक्रम छात्रों को मोबाइल एप्लिकेशन से संबंधित प्रोग्रामिंग प्रौद्योगिकियों, डिजाइन और विकास से परिचित कराता है";
+        document.getElementById("course-desc2").innerHTML =
+          "यह पाठ्यक्रम छात्रों को मोबाइल एप्लिकेशन से संबंधित प्रोग्रामिंग प्रौद्योगिकियों, डिजाइन और विकास से परिचित कराता है";
+        document.getElementById("course-desc3").innerHTML =
+          "यह पाठ्यक्रम छात्रों को मोबाइल एप्लिकेशन से संबंधित प्रोग्रामिंग प्रौद्योगिकियों, डिजाइन और विकास से परिचित कराता है";
+        document.getElementById("course-desc4").innerHTML =
+          "यह पाठ्यक्रम छात्रों को मोबाइल एप्लिकेशन से संबंधित प्रोग्रामिंग प्रौद्योगिकियों, डिजाइन और विकास से परिचित कराता है";
+        document.getElementById("course-desc5").innerHTML =
+          "यह पाठ्यक्रम छात्रों को मोबाइल एप्लिकेशन से संबंधित प्रोग्रामिंग प्रौद्योगिकियों, डिजाइन और विकास से परिचित कराता है";
+        document.getElementById("course-desc6").innerHTML =
+          "यह पाठ्यक्रम छात्रों को मोबाइल एप्लिकेशन से संबंधित प्रोग्रामिंग प्रौद्योगिकियों, डिजाइन और विकास से परिचित कराता है";
+        document.getElementById("course-desc7").innerHTML =
+          "यह पाठ्यक्रम छात्रों को मोबाइल एप्लिकेशन से संबंधित प्रोग्रामिंग प्रौद्योगिकियों, डिजाइन और विकास से परिचित कराता है";
+        document.getElementById("course-desc8").innerHTML =
+          "यह पाठ्यक्रम छात्रों को मोबाइल एप्लिकेशन से संबंधित प्रोग्रामिंग प्रौद्योगिकियों, डिजाइन और विकास से परिचित कराता है";
+        document.getElementById("banner-heading").innerHTML =
+          "अपने शैक्षणिक लक्ष्यों के साथ संगत नि:शुल्क कोर्स चुनें";
+        document.getElementById("banner-paragraph").innerHTML =
+          "हमारे द्वारा प्रदान की जाने वाली मुफ्त पाठ्यक्रम विभिन्न विषयों पर अपनी शैक्षणिक लक्ष्यों को ध्यान में रखते हुए, तकनीकी कौशलों से लेकर व्यक्तिगत विकास तक, करियर में आगे बढ़ने या व्यक्तिगत शिक्षा के लक्ष्य को साधने के लिए सुलभ शिक्षा प्रदान करते हैं।";
+
+        // Courses
+        document.getElementById("courses-heading").innerHTML = "कोर्स";
+        document.getElementById("about-heading").innerHTML = "हमारे बारे में";
+        document.getElementById("about-subheading").innerHTML =
+          "हमारा उद्देश्य";
+        document.getElementById("about-paragraph").innerHTML =
+          "हमारा मिशन सभी को पहुंचीये शिक्षा प्रदान करना है, चाहे वो पृष्ठभूमि हो या वित्तीय स्थिति, व्यक्तियों को उनके लक्ष्य हासिल करने और उनके करियर को आगे बढ़ाने में सहायक बनाना।";
+
+        // Contact Us
+        document.getElementById("footer-heading").innerHTML =
+          "हमसे संपर्क करें";
+        document.getElementById("contact-info").innerHTML = "संपर्क जानकारी";
+        document.getElementById("address").innerHTML =
+          "123 स्ट्रीट नाम, नगर, देश";
+        document.getElementById("phone").innerHTML = "फोन: +1234567890";
+        document.getElementById("email-contact").innerHTML =
+          "ईमेल: example@example.com";
+      }
+
+      // Event listener for Hindi option
+      document.getElementById("hindi").addEventListener("click", function () {
+        changeToHindi();
+      });
+    </script>
+  </body>
+</html>
